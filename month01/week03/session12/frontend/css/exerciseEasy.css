@@ -1,0 +1,50 @@
+h1{
+    color: blue;
+    font-size: 32px;
+    font-style: bold;
+    text-align: center;
+}
+p{
+    color: gray;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.highlight{
+  background-color: yellow;
+}
+.important{
+    color: red;
+}
+#header h1{
+    background-color: black;
+    color: white;
+}
+#footer p{
+    background-color: gray;
+    color: white;
+}
+
+ /* <!-- EXERCISE 4 --> */
+ /* 1. Улаан өнгө - нэрээр */
+.red-named {
+    color: red;
+}
+
+/* 2. Ногоон өнгө - hex */
+.green-hex {
+    color: #008000;
+}
+
+/* 3. Цэнхэр өнгө - rgb */
+.blue-rgb {
+    color: rgb(0,128,255);
+}
+
+/* 4. Хагас тунгалаг хар - rgba */
+.black-transparent {
+    background-color: rgba(0,0,1,50%);
+}
+
+a{
+    text-decoration: none;
+}

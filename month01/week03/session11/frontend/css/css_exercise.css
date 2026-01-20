@@ -1,0 +1,38 @@
+/* Exercise 1 - CSS SYNTAX */
+
+h1{
+    color: red;
+    font-size: 32px;
+}
+p{
+    color: grey;
+}
+h2{
+
+    color: green;
+}
+.card{
+    border: 1px solid gray;
+}
+#main-title{
+    font-size: 48px;
+}
+.highlight{
+    background: yellow;
+}
+.btn{
+    padding: 10px 20px;
+}
+body{
+    color: #333;
+}
+header{
+    background-color: black;
+    color: white;
+}
+.warning{
+    background-color: rgba(255, 255, 0, 50%);
+}
+a{
+    color: blue;
+}

@@ -1,0 +1,53 @@
+h2,
+h3 {
+    text-align: center;
+}
+
+/* nav{
+    text-align: center;
+} */
+ ul{
+    width: 600px;
+    margin: 0 auto ;
+    padding-bottom: 30px;
+ }
+
+li{
+    display: inline;
+    margin-left: 30px;
+    border-left: 1px solid black;
+    padding: 10px;
+    /* border-top: 10px; */
+}
+
+li a {
+    text-decoration: none;
+}
+.underline{
+ /* margin-top: 50px; */
+    width: 600px;
+    height: 1px;
+    background-color: black;
+     margin: 0 auto;  
+}
+    
+.section{
+    /* width: 300px;
+    height: 300px; */
+    margin: 0 auto;  
+}
+
+section h2, p{
+    display: inline;
+}
+
+h4,p,img{
+    display: inline-block;
+    padding: 5px;
+} 
+img{
+padding-top: 20px;
+}
+
+
+ /* option +shift + f */

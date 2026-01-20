@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internal CSS</title>
+    <style>
+      /* tag selector */
+      h1 {
+        color: tomato;
+        background-color: aquamarine;
+      }
+
+      div {
+        font-size: 30px;
+      } 
+
+      .h2_food{
+        /* property : value  */
+        color: black;
+        background-color: aqua;
+      font-size: 50px;
+        font-style: italic;  
+
+      }
+
+      h2{
+        color: blueviolet;
+      }
+      
+      
+
+      ul {
+        background-color: grey;
+      }
+
+      li {
+        color: violet;
+      }
+      /* ID Selector */
+      #jeyuk{
+        color: teal;
+        background-color: turquoise;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Internal CSS</h1>
+    <h1>Another Header 1</h1>
+    <h1>Another Header 2</h1>
+
+    <div>
+      <h2>Korean Food</h2>
+      <ul>
+        <li id="jeyuk">Jeyuk Bokkeum</li>
+        <li id="gimbap">Gimbap</li>
+        <li id="tok">Tteokbokki</li>
+        <li id="dak">Dak Dori Tang</li>
+      </ul>
+    </div>
+    
+    <div>
+        <h2 class="h2_food">Italian Food</h2>
+        <!-- Italian food-ийг өнгө нь цэнхэрдүү арын өнгөтэй 25px өргөнтэй бас налуу хэлбэртэй болгоё -->
+        <ul>
+            <li>Pasta</li>
+            <li>Parmaziano</li>
+            <li>Pizza</li>
+        </ul>
+    </div>
+  </body>
+</html>
