@@ -1,0 +1,92 @@
+.ex01 {
+    background-color: aqua;
+    width: 300px;
+    height: 200px;
+}
+
+.ex02 {
+    width: 500px;
+    height: 300px;
+    border: 1px solid pink;
+    overflow: scroll;
+    padding: 20px;
+    margin: 20px;
+}
+
+.ex03 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid rebeccapurple;
+    overflow: hidden;
+}
+
+.ex04 {
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    border: 1px solid red;
+    overflow-y: scroll;
+}
+
+.ex08 {
+    max-height: 300px;
+    min-height: 100px;
+    width: 400px;
+    border: 1px solid blue;
+    margin: 20px;
+
+}
+
+.ex09 {
+    width: 200px;
+    height: 200px;
+}
+
+.ex09 img {
+    max-width: 100%;
+    max-height: auto;
+    /* object-fit: contain; */
+
+}
+
+.ex10 {
+    margin-top: 80px;
+    max-width: 300px;
+    height: 60px;
+    border: 1px solid black;
+        overflow-x: scroll;
+
+    background-color: aquamarine;
+
+}
+.ex10 .mini02{
+    width: 400px;
+    height: 50px;
+      
+}
+.ex05 {
+    width: 400px;
+    height: 300px;
+    background-color: aquamarine;
+    margin-top: 60px;
+    overflow-y: scroll;
+    border: 1px solid black;
+
+    
+}
+
+.ex05 .mini01 {
+    display: inline-block;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    overflow-y: scroll;
+    background-color: pink;
+    border: 1px solid black;
+}
+
+.ex05 .bg {
+
+    background-color: peru;
+
+}

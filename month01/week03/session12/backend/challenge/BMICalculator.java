@@ -20,7 +20,7 @@ public class BMICalculator {
             }else if (bmi >= 25 && bmi <=29.9) {
                 category = "Overweight";
             } else{
-                category ="fat";
+                category ="Obese";
             }
             System.out.println("Height(m): " + height);
             System.out.println("Weight(kg): " + weight);
