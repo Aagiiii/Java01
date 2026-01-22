@@ -6,8 +6,8 @@ public class GuessingGame {
         Scanner sc = new Scanner(System.in);
         Random rm = new Random();
 
-        int secretNum = rm.nextInt(5) + 1;
-        int guess;
+        int secretNum = rm.nextInt(100) + 1;
+        int guess=0;
         int attempts = 0;
         String result = "";
         while (attempts < 3) {
@@ -24,7 +24,7 @@ public class GuessingGame {
         }
         System.out.println("=== Game===");
         System.out.println("randomNum is: " + secretNum);
-        // System.out.println("GuessNum is :" + guess);
+        System.out.println("GuessNum is :" + guess);
         System.out.println(result);
 
         sc.close();

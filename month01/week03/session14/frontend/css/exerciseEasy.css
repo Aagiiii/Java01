@@ -1,0 +1,99 @@
+.card{
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+}
+.box{
+    width: 150px;
+    height: 100px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+.solid-border{
+    border: 3px solid #333;
+}
+.dashed-border{
+    border: 3px dashed #666;
+}
+.dotted-border{
+    border: 3px dotted #999;
+}
+.double-border{
+    border: 4px double black;
+}
+.rounded-border{
+    border: 2px solid #333;
+    border-radius: 15px;
+}
+.circle{
+  width: 100px;
+  height: 100px;
+  border: 2px solid #333;
+  border-radius: 100%;
+}
+
+.container{
+    width: 100%;
+    background-color:#f0f0f0 ;
+    padding: 50px 0;
+}
+.centered-box{
+    width: 400px;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    text-align: center;
+}
+.blog-post{
+    width: 600px;
+    padding: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.title{
+    font-size: 32px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom:10px ;
+}
+.meta{
+    font-size: 14px;
+    color: #888;
+    font-style: italic;
+}
+.content{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+}
+ /* <!-- Exercise 1.7 --> */
+ .nav-link{
+    color: #333;
+    text-decoration: none;
+    margin-right: 20px;
+ }
+ .nav-link:hover{
+    text-decoration: underline;
+ }
+ .strikethrough{
+    color: #999;
+    text-decoration: line-through;
+ }
+ .new-price{
+    color: red;
+    font-weight: bold;
+ }
+  /* <!-- Exercise 1.8 --> */
+  .uppercase{
+    text-transform: uppercase;
+  }
+  .capitalize{
+    text-transform:capitalize;
+  }
+  .lowercase{
+    text-transform: lowercase;
+  }
