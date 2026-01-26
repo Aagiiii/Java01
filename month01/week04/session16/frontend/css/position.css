@@ -1,0 +1,89 @@
+.box01{
+    width: 300px;
+    height: 300px;
+    background: blueviolet;
+    border: 1px solid orange;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.anchor-element{
+    margin: 20px;
+    background-color: aqua;
+}
+
+.box02{
+    width: 200px;
+    height: 200px;
+    border: 2px solid orangered;
+    font-size: 30px;
+    color: white;
+    background-color: bisque;
+    position: relative;
+    top: 20px;
+    /* left: 20px;
+    right: 30px;
+    bottom: 40px; */
+}
+
+/* combination  */
+.parent{
+    margin-top: 40px;
+    width: 400px;
+    height: 400px;
+    background-color: orange;
+    position: relative;
+}
+.child{
+    height: 200px;
+    width: 200px;
+    background-color: yellowgreen;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    text-align: center;
+}
+
+/* fixed */
+ul{
+    width: 500px;
+    height: 100px;
+    background-color: aqua;
+    color: black;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 40%;
+   
+
+}
+li{
+    display: inline-block;
+    height: 50px;
+    width: 60px;
+    position: relative;
+    top: 8%;
+    /* background-color: violet; */
+
+}
+
+#SERVICE{
+left: 50%;
+}
+
+.sticky{
+    background-color: green;
+    bottom: 20px;
+    cursor: pointer;
+    height: 40px;
+    opacity: 0.5;
+    position: sticky;
+    right: 20px;
+    text-align: center;
+    width: 40px;
+    /* z-index: 90000; */
+    border-radius: 4px;
+}

@@ -1,0 +1,29 @@
+.box{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 1px solid purple;
+    text-align: center;
+    display: inline-block;
+    background-color: lightblue;
+}
+
+.text{
+    background-color: bisque;
+    color: purple;
+    display: block;
+    border: 1px solid orange;
+}
+
+ul li{
+    display: inline;
+    border: 2px dotted chocolate;
+}
+
+ul li#budaa, ul li#altaa{
+    display: none;
+}
+
+ul li#avenger{
+    visibility: hidden;
+}
