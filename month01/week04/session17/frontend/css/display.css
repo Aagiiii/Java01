@@ -1,0 +1,241 @@
+.container {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.box {
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    margin: 5px;
+}
+
+/* Inline: Мөр дотор, width ажиллахгүй */
+.box-inline {
+    display: inline;
+    /* width: 150px;  <-- Ажиллахгүй! */
+}
+
+/* Block: Шинэ мөрөнд, 100% өргөн */
+.box-block {
+    display: block;
+    width: 200px;
+}
+
+/* Inline-block: Мөр дотор + width ажиллана */
+.box-inline-block {
+    display: inline-block;
+    width: 100%;
+}
+/* EX-2 */
+.main-nav {
+    background-color: #2c3e50;
+    padding: 10px;         
+    text-align: center;
+}
+
+.nav-link {
+    display: inline-block;    /* inline-block */
+    padding: 12px 25px;     /* 12px 25px */
+    color: white;             /* white */
+    text-decoration:none;   /* none */
+    margin: 0 5px;      /* 0 5px */
+    border-radius: 5px;     /* 5px */
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #34495e;  
+}
+
+/* <!-- EX-3 --> */
+.card-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.card {
+    display:inline-block;     /* inline-block */
+    width: 250PX;             /* 250px */
+    padding: 20PX;            /* 20px */
+    margin:10px;             /* 10px */
+    background-color: white;   /* white */
+    border: 1px solid #ddd;  /* 1px solid #ddd */
+    border-radius: 8px;      /* 8px */
+    text-align:left;         /* left */
+    vertical-align: top;    }
+
+.card h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    font-size: 14px;
+}
+/* Ex2.1 */
+
+.product-card {
+    position: relative;        /* relative - child-д absolute ажиллуулахын тулд */
+    width: 280px;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+}
+
+.badge {
+    position: absolute;        /* absolute */
+    top: 10px;                /* 10px */
+    right: 10px;              /* 10px */
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 12px;      /* 5px 12px */
+    font-size: 12px;          /* 12px */
+    font-weight: bold;
+    border-radius: 4px;      /* 4px */
+}
+
+.price {
+    color: #e74c3c;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* <!-- EX 2.2 --> */
+.fixed-header {
+    position: fixed;           /* fixed */
+    top: 0;                /* 0 */
+    left: 0;               /* 0 */
+    width: 100%;              /* 100% */
+    height: 60px;
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    z-index: 1000;           /* 1000 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.fixed-header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.login-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ЧУХАЛ: body-д padding-top өгөх! */
+.main-content {
+    padding-top: 80px;        /* 80px - header-ийн өндрөөс их */
+    padding: 80px 30px 30px 30px;
+}
+
+/* <!-- EX 2.3--> */
+.back-to-top{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color:#3498db ;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+    z-index: 999;
+
+}
+.back-to-top:hover{
+    background-color:#2980b9 ;
+    transform: translateY(-3px);
+}
+/* <!-- EX 2.3--> */
+.image-container{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.image-container:hover .overlay{
+    opacity: 1;
+}
+/* <!-- EX 2.5--> */
+
+.dropdown-nav{
+    background-color:#2c3e50 ;
+    padding: 15px;
+    margin-top: 100px;
+}
+.nav-item{
+    position: relative;
+    display: inline-block;
+}
+
+.nav-item > a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.dropdown{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    display: none;
+}
+.dropdown a{
+display: block;
+padding: 12px 15px;
+color: #333;
+text-decoration: none;
+}
+
+.dropdown a:hover{
+    background-color: #f0f0f0 ;
+}
+.nav-item:hover .dropdown{
+    display: block;
+}
