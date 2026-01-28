@@ -1,0 +1,49 @@
+.article-image{
+    float: left;
+    width: 200px;
+    margin-right:20px ;
+    margin-left: 10px;
+}
+
+.box-grid{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.box{
+    float: right;
+    background: beige;
+    border-radius: 8px;
+    padding: 20px;
+    height: 20px;
+    margin: 10px;
+    width: calc(33.3% - 20px);
+}
+
+.box-grid .clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.layout{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.sidebar{
+    margin-top: 100px;
+    width: 250px;
+    background:bisque;
+    /* color: white; */
+    min-height: 400px;
+    padding: 20px;
+    float: left;
+}
+.main-content{
+    margin-top: 20px;
+    float: left;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    min-height: 400px;
+    width: calc(100% -25px);
+}

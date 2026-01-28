@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float2</title>
+    <link rel="stylesheet" href="./css/float02.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Clearfix Exercise</h1>
+        <h2>Problem</h2>
+        <p class="desc"> this container is not shown</p>
+        <div class="gallery-broken">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+            <div class="box">Box 4</div>
+        </div>
+        <p class="after-box broken">This text is positioned wrong.</p>
+        <h1>Solution: clearfix usage</h1>
+        <p class="desc">
+            after clearfix class added the problem will be solved.
+        </p>
+        <div class="gallery clearfix">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3 </div>
+            <div class="box">Box 4</div>
+        </div>
+        <p class="after-box fixed">This text is positioned correctly.
+
+        </p>
+
+    </div>
+</body>
+
+</html>
