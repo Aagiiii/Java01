@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.pricing-container{
+
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+ /* TODO: Картуудыг хэвтээ чиглэлд төвлөрүүлэх */
+justify-content: center;
+    /* TODO: Картуудыг босоо чиглэлд дээд талд зэрэгцүүлэх */
+align-items: flex-start;
+    /* TODO: Картуудын хоорондох зай 30px */
+gap: 30px;
+    /* TODO: Жижиг дэлгэцэнд wrap хийх */
+flex-wrap: wrap;
+}
+
+.pricing-card{
+    background: bisque;
+    border-radius: 20px;
+    padding: 40px 30px;
+    width: 320px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-price{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: column;
+}
+.card-features{
+    list-style: none;
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.card-button{
+    width: 100%;
+    padding: 15px 30px;
+    margin-top: auto;
+    border: none;
+    background-color: burlywood;
+    border-radius: 8px;
+}
+
+/* Ptofile card */
+
+.container {
+    min-height: 100vh;
+    padding: 40px 20px;
+    background-color: azure;
+    /* TODO: Flexbox идэвхжүүлэх */
+    display: flex;
+
+    /* TODO: Картыг хэвтээ төвд байрлуулах */
+justify-content: center;
+    /* TODO: Картыг босоо төвд байрлуулах */
+    align-items: center;
+}
+
+.profile-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    width: 380px;
+     border: 1px solid #24a0ed;
+    border-radius: 8px;
+    /* padding: 5px; */
+
+    /* TODO: Flexbox идэвхжүүлэх */
+    display: flex;
+
+    /* TODO: Босоо чиглэлд байрлуулах */
+flex-direction: column;
+    /* TODO: Элементүүдийг хэвтээ төвд байрлуулах */
+    justify-content: center;
+}
+.profile-header{
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+     border: 1px solid #24a0ed;
+    border-radius: 8px;
+    padding: 5px;
+}
+.profile-stats {
+    width: 100%;
+    padding: 20px 0;
+
+    /* TODO: Flexbox идэвхжүүлэх */
+    display: flex;
+    /* TODO: 3 stat-item-ийг тэнцүү зайтай байрлуулах */
+    justify-content: space-evenly;
+    /* align-items: baseline; */
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+
+    /* TODO: Flexbox идэвхжүүлэх */
+    display: flex;
+    /* TODO: Босоо чиглэлд байрлуулах */
+flex-direction: column;
+    /* TODO: Зай 5px */
+    gap: 5px;
+    border: 1px solid #24a0ed;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.profile-actions {
+    width: 100%;
+    margin-bottom: 25px;
+
+    /* TODO: Flexbox идэвхжүүлэх */
+    display: flex;
+
+    /* TODO: Товчнуудын хоорондох зай 15px */
+    gap: 15px;
+    justify-content: center;
+
+}
+button{
+        border: none;
+    background-color: #24a0ed;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.social-links {
+    width: 100%;
+
+    /* TODO: Flexbox идэвхжүүлэх */
+    display: flex;
+    /* TODO: Төвд байрлуулах */
+justify-content: center;
+    /* TODO: Зай 20px */
+gap: 20px;
+    /* TODO: Wrap хийх */
+    flex-wrap: wrap;
+     border: 1px solid #24a0ed;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+
+/* Feature Boxes */
+.sec-header ,.sec-container{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 10px;
+
+    /* TODO: Flexbox идэвхжүүлэх */
+display: flex;
+    /* TODO: Босоо чиглэлд байрлуулах */
+flex-direction: column;
+    /* TODO: Төвлөрүүлэх */
+justify-content: center;
+    /* TODO: Зай 15px */
+    gap: 15px;
+    background-color: cornsilk;
+}
+
+.features-container {
+    /* TODO: Flexbox идэвхжүүлэх */
+display: flex;
+    /* TODO: Wrap хийх */
+flex-wrap: wrap;
+    /* TODO: Хайрцагуудыг төвлөрүүлэх */
+align-items: center;
+justify-content: center;
+    /* TODO: Зай 30px */
+    gap: 30px;
+}
+
+.feature-box {
+    background: white;
+    border-radius: 15px;
+    padding: 35px 25px;
+    width: calc(33.333% - 20px);
+    min-width: 280px;
+
+    /* TODO: Flexbox идэвхжүүлэх */
+display: flex;
+    /* TODO: Босоо чиглэлд байрлуулах */
+flex-direction: column;
+    /* TODO: Төвлөрүүлэх */
+align-items: center;
+    /* TODO: Зай 15px */
+    gap: 15px;
+    border: 1px solid #24a0ed;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 2rem;
+
+    /* TODO: Flexbox идэвхжүүлэх */
+display: flex;
+    /* TODO: Emoji-г хэвтээ төвд байрлуулах */
+align-items: center;
+    /* TODO: Emoji-г босоо төвд байрлуулах */
+    justify-content: center;
+}
+
+
