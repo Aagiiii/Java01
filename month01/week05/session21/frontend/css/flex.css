@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* max-width: 1200px; */
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    background-color: red;
+
+
+}
+
+.circle p {
+    font-size: 50px;
+    color: white;
+}

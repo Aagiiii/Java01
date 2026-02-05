@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #34495e;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    align-items: center;
+}
+
+
+.auth-buttons button {
+    padding: 10px 20px;
+
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.signup {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+}
+
+/*  <!-- Multi-row Gallery with align-content --> */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.gallery {
+    height: 600px;
+    border: 2px solid #ddd;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    gap: 15px;
+}
+
+.photo {
+    width: 100px;
+    height: 150px;
+    background-color: #3498db;
+    border-radius: 8px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* <!-- dashboard --> */
+
+.dashboard-header {
+    background-color: white;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    /* gap: 30px; */
+
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+.search-bar {
+    max-width: 600px;
+    display: flex;
+    flex-grow: 1;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.header-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.notification-icon,
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ecf0f1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
