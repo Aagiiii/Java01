@@ -1,8 +1,8 @@
-class Product{
+class ProductP{
     String name;
     double price;
     int quantity;
-    Product(String name, double price, int quantity){
+    ProductP(String name, double price, int quantity){
         this.name = name;
         this.price = price;
         this.quantity = quantity;
@@ -16,6 +16,14 @@ class Product{
         System.out.println(name  + "-" + price + "x" + quantity +"="+ calculateTotal());
         System.out.println();
     }
+    // public void setDiscount(int i) {
+    //     // TODO Auto-generated method stub
+    //     throw new UnsupportedOperationException("Unimplemented method 'setDiscount'");
+    // }
+    // public void display() {
+    //     // TODO Auto-generated method stub
+    //     throw new UnsupportedOperationException("Unimplemented method 'display'");
+    // }
 
     
 
@@ -23,12 +31,12 @@ class Product{
 
 public class ProductPractice {
     public static void main(String[] args) {
-        Product p1 = new Product("Laptop",2500000,1);
-        Product p2 = new Product("Mouse", 45000, 3);
-        Product p3 = new Product("Keyboard", 85000, 2);
+        ProductP p1 = new ProductP("Laptop",2500000,1);
+        ProductP p2 = new ProductP("Mouse", 45000, 3);
+        ProductP p3 = new ProductP("Keyboard", 85000, 2);
        double grandTotal =0;
 
-        Product[] products = new Product[3];
+        ProductP[] products = new ProductP[3];
         products[0] =p1;
         products[1] =p2;
         products[2] =p3;
