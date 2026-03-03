@@ -43,7 +43,6 @@ ul {
     list-style: none;
     display: flex;
     justify-content: center;
-
     gap: 20px;
 }
 
@@ -136,7 +135,6 @@ ul li a {
     width: 100%;
     height: 892px;
     background-color: #FFF4E8;
-
     padding: 56px 300px;
 }
 

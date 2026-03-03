@@ -1,0 +1,77 @@
+/* repeated usage  */
+
+:root{
+    --text-color:#7e7e7e;
+    --block-height:80vh;
+    --block-width:60vw;
+
+    /* button styles */
+    --btn-bg:coral;
+    --btn-color:white;
+    --btn-padding:10px 24px;
+    --btn-radius:8px;
+
+    /* theme */
+    --bg:white;
+    --text:#222;
+
+    /* card */
+    --card-bg:#f0f0f0;
+
+}
+
+
+
+main{
+    height: var(--block-height);
+    width: var(--block-width);
+    margin: 0 auto;
+    background: burlywood;
+    /* color: #7e7e7e; */
+    color: var(--text-color);
+}
+
+section{
+    height: var(--block-height);
+    width:var(--block-width);
+    background: orange;
+    /* color: #7e7e7e; */
+    color: var(--text-color);
+}
+
+h2{
+    /* color: #7e7e7e; */
+    color: var(--text-color);
+}
+
+.btn{
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
+    padding: var(--btn-padding);
+    border-radius: var(--btn-radius);
+    border: none;
+    cursor: pointer;
+}
+
+body.dark{
+    --bg:#1a1a2e;
+    --text:#eee;
+}
+
+body{
+    background: var(--bg);
+    color: var(--text);
+    transition: background 0.3s , color 0.3s;
+}
+
+.card{
+    background: var(--card-bg);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.highlight{
+    /* local override */
+    --card-bg:gold;   
+}

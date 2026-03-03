@@ -1,0 +1,97 @@
+/* 
+:root{
+    --color-primary:#6366f1;
+    --color-text-light: #ffffff;
+    --color-surface:#f9fafb;
+    --color-border:#e5e7eb;
+    --spacing-md: 16px 24px;
+    --border-radius:8px;
+}
+
+
+
+.header {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    padding: var(--spacing-md);
+}
+
+.button {
+    background-color:var(--color-primary);
+    color:var(--color-text-light);
+   --spacing-md: 10px 20px;
+   padding: var(--spacing-md);
+    border-radius:var(--border-radius);
+}
+
+.card {
+    background-color:var(--color-surface);
+    border: 1px solid var(--color-border);
+    --spacing-md:16px;
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+}
+
+.link {
+    color:var(--color-primary);
+}
+
+:root {
+    --color-primary: #6366f1;
+    --spacing-md: 16px;
+  
+}
+
+.box-1 { color: var(--color-primary, red); }
+.box-2 { color: var(--color-accent, orange); }
+.box-3 { padding: var(--spacing-md, 20px); }
+.box-4 { background: var(--color-surface, var(--color-primary, gray)); } */
+
+/* L2 Theme Switcher  */
+:root{
+    --bg: #ffffff;
+    --text: #1f2937;
+    --font-size-base:14px;
+    --spacing-md:12px;
+    --columns:1;
+
+}
+
+[data-theme="dark"]{
+     --bg:      #111827;
+    --text:    #f9fafb;
+}
+
+[data-theme="ocean"]{
+    --bg:lightblue;
+}
+
+body{
+    background: var(--bg);
+     color:      var(--text);
+    transition: background 0.3s, color 0.3s
+}
+
+.theme-btn{
+    font-size: var(--font-size-base);
+    padding: var(--spacing-md), 20px;
+
+}
+
+/* 768px дээш */
+@media (min-width: 768px) {
+    :root {
+        /* Энд variables-г нэмэгдүүл */
+       --font-size-base:16px;
+    --spacing-md:16px;
+    }
+}
+
+/* 1024px дээш */
+@media (min-width: 1024px) {
+    :root {
+        /* Энд variables-г цааш нэмэгдүүл */
+        --font-size-base:18px;
+    --spacing-md:24px;
+    }
+}
