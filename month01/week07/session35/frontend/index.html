@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Feedback — Student 6</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  
+</head>
+<body>
+<div class="form-container">
+  <h1>Leave Feedback</h1>
+  <p>We would love to hear what you think!</p>
+
+  <form>
+
+    <!-- Add a label and input for Your Name -->
+<label for="name">Your name</label>
+<input type="text" placeholder="e.g Aagii AS">
+    <!-- Add a label and email input for Email Address -->
+    <label for="email">Email Address </label>
+    <input type="email" placeholder="e.g aagii@gmail.com">
+
+    <!-- Add a label and select dropdown for Category.
+            Add these options: Product, Service, Website, Other -->
+    <label for="catgory">Category</label>
+    <select name="categories" id="turul-select">
+        <option value="">-- Select a category --  </option>
+        <option value="Product"> Product</option>
+        <option value="Service"> Service</option>
+        <option value="Website"> Website</option>
+        <option value="Other"> Other</option>
+    </select>
+
+    <!-- Add a div with class "radio-group" containing:
+         a paragraph "How would you rate your experience?",
+         three radio-rows: Good, Neutral, Bad.
+         All radios must have the same name. -->
+    <div class="radio-group">
+        <p>How would you rate your experience?</p>
+        <div class="radio-row">
+            <input type="radio" name="radio-rows" class="radio-rows"><label for="good">Good</label>
+        </div>
+        <div class="radio-row"><input type="radio" name="radio-rows" class="radio-rows"><label for="neutral">Neutral</label></div>
+        <div class="radio-row"> <input type="radio" name="radio-rows" class="radio-rows"><label for="bad">Bad</label></div>
+       
+    </div>
+
+    <!-- Add a label and textarea for Your Comments -->
+    <label for="comments">Your comments</label>
+    <textarea name="textarea" id="textarea">Write your feedback here</textarea>
+   
+
+    <!-- Add a submit button with the text "Submit Feedback" -->
+    <button>Submit Feedback</button>
+
+  </form>
+</div>
+</body>
+</html>

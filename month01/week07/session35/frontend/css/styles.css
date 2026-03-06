@@ -1,0 +1,141 @@
+/* Make the whole page use font: Arial, sans-serif.
+       Give the page a light grey background color: #f0f0f0
+       Add 40px of space around all edges. */
+body {
+
+    font-family: "Arial", "sans-serif";
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-container {
+
+    margin: 40px;
+}
+
+/* Give the title the color: #333333
+       Add 6px of space below it. */
+h1 {
+    color: #333333;
+    margin-bottom: 6px;
+}
+
+/* Give the description text the color: #666666
+       Add 24px of space below it. */
+p {
+    color: #666666;
+    margin-bottom: 24px;
+}
+
+/* Give the form a white background color: #ffffff
+       Add 24px of space inside on all sides.
+       Set the maximum width to 420px.
+       Add a border: 1px solid, color: #cccccc */
+form {
+    background-color: #ffffff;
+    padding: 24px;
+    max-width: 420px;
+    border: 1px solid #cccccc;
+
+}
+
+/* Make each label sit on its own line: display block.
+       Set the font size to 14px.
+       Give labels the color: #333333
+       Add 4px of space below each label. */
+label {
+    display: block;
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 4px;
+}
+
+/* Make all fields fill the full width: 100%
+       Add 8px of space inside on all sides.
+       Add 16px of space below each field.
+       Add a border: 1px solid, color: #cccccc
+       Set the font size to 14px.
+       Set the font-family to Arial, sans-serif.
+       Set box-sizing to border-box so padding fits inside the width. */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #cccccc;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* When the user clicks a field, change the border color to: #d4507a
+       Remove the default browser outline: none */
+input:focus,
+select:focus,
+textarea:focus {
+    color: #d4507a;
+    outline: none;
+}
+
+/* Set the textarea height to 100px.
+       Set resize to vertical only. */
+textarea {
+    height: 100px;
+    resize: vertical;
+    color: #666666;
+}
+
+/* Add 16px of space below the radio group. */
+.radio-group {
+    margin-bottom: 16px;
+}
+
+/* Set the font size to 14px.
+       Give the text the color: #333333
+       Add 6px of space below it. */
+.radio-group p {
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 6px;
+}
+
+/* Set display to flex so the radio button and label sit side by side.
+       Set align-items to center so they line up vertically.
+       Set the gap between them to 8px.
+       Add 8px of space below each row.
+       Set the font size to 14px.
+       Give the text the color: #333333 */
+.radio-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #333333;
+}
+
+/* Give the button a background color: #d4507a
+       Make the text color white: #ffffff
+       Remove the border: none
+       Add 10px of space inside on all sides.
+       Set the font size to 14px.
+       Make the button fill the full width: 100%
+       Set the cursor to pointer. */
+button {
+    background-color: #d4507a;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* When the user hovers over the button,
+       change the background color to: #b83d63 */
+button:hover {
+    background-color: #b83d63;
+
+}
