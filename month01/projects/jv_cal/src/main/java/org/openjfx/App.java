@@ -1,38 +1,38 @@
-package org.openjfx;
+// package org.openjfx;
 
-import javafx.application.Application;
-import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.layout.StackPane;
-import javafx.stage.Stage;
-
-
-/**
- * JavaFX App
- */
-public class App extends Application {
-
-    private StringBuilder inputs = new StringBuilder();
-    private String operator;
-    private double result;
-
-    private TextField display;
+// import javafx.application.Application;
+// import javafx.scene.Scene;
+// import javafx.scene.control.Label;
+// import javafx.scene.layout.StackPane;
+// import javafx.stage.Stage;
 
 
+// /**
+//  * JavaFX App
+//  */
+// public class App extends Application {
 
-    @Override
-    public void start(Stage stage) {
-        // var javaVersion = SystemInfo.javaVersion();
-        // var javafxVersion = SystemInfo.javafxVersion();
+//     private StringBuilder inputs = new StringBuilder();
+//     private String operator;
+//     private double result;
 
-        // var label = new Label("Hello, JavaFX " + javafxVersion + ", running on Java " + javaVersion + ".");
-        var scene = new Scene(new StackPane(label), 640, 480);
-        stage.setScene(scene);
-        stage.show();
-    }
+//     private TextField display;
 
-    public static void main(String[] args) {
-        launch();
-    }
 
-}
+
+//     @Override
+//     public void start(Stage stage) {
+//         // var javaVersion = SystemInfo.javaVersion();
+//         // var javafxVersion = SystemInfo.javafxVersion();
+
+//         // var label = new Label("Hello, JavaFX " + javafxVersion + ", running on Java " + javaVersion + ".");
+//         var scene = new Scene(new StackPane(label), 640, 480);
+//         stage.setScene(scene);
+//         stage.show();
+//     }
+
+//     public static void main(String[] args) {
+//         launch();
+//     }
+
+// }
