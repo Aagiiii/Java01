@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <h1>Recapture</h1>
+    <main id="main">
+
+    </main>
+
+    <h2>Exercise 02</h2>
+    <input type="text" id="text-input" placeholder="Write here...">
+    <div id="key-display">
+
+    </div>
+    <h2>Exercise 03</h2>
+    <div class="comment-box">
+        <textarea name="" id="comment" maxlength="280" placeholder="Write comment..."></textarea>
+        <div class="counter">
+            <span id="current">0</span> / <span id="max">280</span>
+        </div>
+    </div>
+
+    <h2>Exercise 04</h2>
+    <form id="register-form">
+      <div class="field">
+        <label>Хэрэглэгчийн нэр</label>
+        <input type="text" id="username" placeholder="3-20 тэмдэгт" />
+        <span class="error" id="username-error"></span>
+      </div>
+      <div class="field">
+        <label>Имэйл</label>
+        <input type="email" id="email" placeholder="example@email.com" />
+        <span class="error" id="email-error"></span>
+      </div>
+      <div class="field">
+        <label>Нууц үг</label>
+        <input type="password" id="password" placeholder="8+ тэмдэгт" />
+        <div class="strength-bar">
+          <div id="strength-fill"></div>
+        </div>
+        <span class="error" id="password-error"></span>
+      </div>
+      <button type="submit">Бүртгүүлэх</button>
+      <p id="form-message"></p>
+    </form>
+    <!-- template literal -->
+<!--  <div> Count: ${count} </div> -->
+    <script src="./js/scripts.js"></script>
+
+</body>
+
+</html>
