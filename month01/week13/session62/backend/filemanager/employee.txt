@@ -1,0 +1,5 @@
+Alice Smith,IT,75000
+Bob Johnson,HR,55000
+Charlie Brown,IT,80000
+Diana Wilson,Finance,65000
+Eve Davis,IT,70000
