@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 import com.example.model.Film;
 
 @Repository
-public class FilmRepository {
+public interface  FilmRepository {
     private final JdbcTemplate jdbcTemplate;
 
     // Spring boot injects database connection here = like dbeaver

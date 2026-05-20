@@ -1,0 +1,8 @@
+com/example/model/Customer.class
+com/example/App.class
+com/example/controller/CustomerController.class
+com/example/repository/RentalRepository.class
+com/example/model/Inventory.class
+com/example/model/Film.class
+com/example/repository/CustomerRepository.class
+com/example/model/Rental.class
