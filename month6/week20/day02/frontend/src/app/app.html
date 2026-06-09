@@ -1,0 +1,148 @@
+@if (!username()) {
+    <div class="login-screen">
+        <div class="login-card">
+            <div class="login-icon">📝</div>
+            <h1>Todo App</h1>
+            <p class="login-subtitle">Sign in to manage your tasks</p>
+            <div class="login-form">
+                <input
+                    type="text"
+                    placeholder="Enter your username"
+                    [ngModel]="loginInput()"
+                    (ngModelChange)="loginInput.set($event)"
+                    (keyup.enter)="login()"
+                />
+                <button class="btn btn-primary" (click)="login()">Sign In</button>
+            </div>
+        </div>
+    </div>
+} @else {
+    <div class="app">
+        <header>
+            <h1>📝 My Tasks</h1>
+            <div class="user-info">
+                <span class="username">{{ username() }}</span>
+                <button class="btn btn-outline btn-sm" (click)="logout()">Sign Out</button>
+            </div>
+        </header>
+
+        <div class="add-card">
+            <input
+                type="text"
+                class="title-input"
+                placeholder="What do you need to do?"
+                [ngModel]="newTitle()"
+                (ngModelChange)="newTitle.set($event)"
+                (keyup.enter)="add()"
+            />
+            <div class="add-options">
+                <select [ngModel]="newPriority()" (ngModelChange)="newPriority.set($event)">
+                    <option value="IMPORTANT">Important</option>
+                    <option value="URGENT">Urgent</option>
+                    <option value="NORMAL">Normal</option>
+                    <option value="LOW">Low</option>
+                </select>
+                <input
+                    type="datetime-local"
+                    [ngModel]="newDeadline()"
+                    (ngModelChange)="newDeadline.set($event)"
+                />
+            </div>
+            <textarea
+                placeholder="Description (optional)"
+                [ngModel]="newDescription()"
+                (ngModelChange)="newDescription.set($event)"
+            ></textarea>
+            <button class="btn btn-primary add-btn" (click)="add()">+ Add Task</button>
+        </div>
+
+        <div class="filters">
+            <div class="status-tabs">
+                <button
+                    class="tab"
+                    [class.active]="filterStatus() === 'all'"
+                    (click)="filterStatus.set('all')"
+                >All ({{ todos().length }})</button>
+                <button
+                    class="tab"
+                    [class.active]="filterStatus() === 'active'"
+                    (click)="filterStatus.set('active')"
+                >Active ({{ activeCount() }})</button>
+                <button
+                    class="tab"
+                    [class.active]="filterStatus() === 'completed'"
+                    (click)="filterStatus.set('completed')"
+                >Completed ({{ completedCount() }})</button>
+            </div>
+            <div class="filter-options">
+                <select [ngModel]="filterPriority()" (ngModelChange)="filterPriority.set($event)">
+                    <option value="all">All priorities</option>
+                    <option value="IMPORTANT">Important</option>
+                    <option value="URGENT">Urgent</option>
+                    <option value="NORMAL">Normal</option>
+                    <option value="LOW">Low</option>
+                </select>
+                <label>
+                    From
+                    <input type="date" [ngModel]="filterFromDate()" (ngModelChange)="filterFromDate.set($event)" />
+                </label>
+                <label>
+                    To
+                    <input type="date" [ngModel]="filterToDate()" (ngModelChange)="filterToDate.set($event)" />
+                </label>
+            </div>
+        </div>
+
+        @if (filterStatus() !== 'completed') {
+            <section>
+                <h2>Active Tasks <span class="count">{{ activeFiltered().length }}</span></h2>
+                @for (todo of activeFiltered(); track todo.id) {
+                    <div class="task-card" [class]="'priority-' + todo.priority.toLowerCase()">
+                        <input type="checkbox" [checked]="todo.completed" (change)="toggle(todo)" />
+                        <div class="task-body">
+                            <div class="task-header">
+                                <span class="task-title">{{ todo.title }}</span>
+                                <span class="badge {{ todo.priority.toLowerCase() }}">{{ todo.priority }}</span>
+                            </div>
+                            @if (todo.description) {
+                                <p class="task-desc">{{ todo.description }}</p>
+                            }
+                            <div class="task-meta">
+                                <span>Created {{ todo.createdAt | date:'MMM d, yyyy' }}</span>
+                                @if (todo.deadline) {
+                                    <span class="deadline">Due {{ todo.deadline | date:'MMM d, h:mm a' }}</span>
+                                }
+                            </div>
+                        </div>
+                        <button class="delete-btn" (click)="remove(todo.id)" title="Delete">✕</button>
+                    </div>
+                } @empty {
+                    <p class="empty">No active tasks</p>
+                }
+            </section>
+        }
+
+        @if (filterStatus() !== 'active') {
+            <section>
+                <h2>Completed <span class="count">{{ completedFiltered().length }}</span></h2>
+                @for (todo of completedFiltered(); track todo.id) {
+                    <div class="task-card completed" [class]="'priority-' + todo.priority.toLowerCase()">
+                        <input type="checkbox" [checked]="todo.completed" (change)="toggle(todo)" />
+                        <div class="task-body">
+                            <div class="task-header">
+                                <span class="task-title">{{ todo.title }}</span>
+                                <span class="badge {{ todo.priority.toLowerCase() }}">{{ todo.priority }}</span>
+                            </div>
+                            <div class="task-meta">
+                                <span>Completed</span>
+                            </div>
+                        </div>
+                        <button class="delete-btn" (click)="remove(todo.id)" title="Delete">✕</button>
+                    </div>
+                } @empty {
+                    <p class="empty">No completed tasks</p>
+                }
+            </section>
+        }
+    </div>
+}
