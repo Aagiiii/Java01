@@ -1,0 +1,8 @@
+{
+    "java.project.sourcePaths": [
+        "month01/week09/session43/backend",
+        "month01/week10/session46/backend/session46/src/main/java/mn/icode"
+    ],
+    "liveServer.settings.port": 5501,
+    "java.compile.nullAnalysis.mode": "automatic"
+}
